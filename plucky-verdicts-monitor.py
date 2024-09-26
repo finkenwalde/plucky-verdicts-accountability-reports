@@ -47,7 +47,7 @@ def check_verdicts():
                 log_explicit_site(output)
                 break
 
-# Function to log explicit sites with a timestamp, program, domain, and action
+# Function to log the raw Plucky verdict output with a timestamp
 def log_explicit_site(verdict):
     # Get the current time and format it as a readable string
     timestamp = datetime.now().strftime('%Y-%m-%d')
