@@ -50,30 +50,14 @@ def check_verdicts():
 # Function to log explicit sites with a timestamp, program, domain, and action
 def log_explicit_site(verdict):
     # Get the current time and format it as a readable string
-    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    timestamp = datetime.now().strftime('%Y-%m-%d')
 
-    # Extract the action (allow or block)
-    action_match = re.search(r'\b(allow|block)\b', verdict)
-    action = action_match.group(0) if action_match else "Unknown Action"
-
-    # Extract the program name (e.g., spotify.exe)
-    program_match = re.search(r'\b\w+\.exe\b', verdict)
-    program = program_match.group(0) if program_match else "Unknown Program"
-
-    # Extract the domain, but only after the program name
-    if program_match:
-        verdict_after_program = verdict[program_match.end():]  # Everything after the program name
-        domain_match = re.search(r'\b[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}\b', verdict_after_program)
-        domain = domain_match.group(0) if domain_match else "Unknown Domain"
-    else:
-        domain = "Unknown Domain"
-
-    # Log the result with timestamp, program, domain, and action
+    # Log the result with timestamp and the raw verdict output
     with open(report_file_path, 'a') as report_file:
-        report_file.write(f"[{timestamp}] Program: {program} | Website: {domain} | Action: {action}\n")
+        report_file.write(f"[{timestamp}] {verdict}")
     
     # Print to console for debugging
-    print(f"Logged: [{timestamp}] Program: {program} | Website: {domain} | Action: {action}")
+    print(f"Logged: [{timestamp}] {verdict}")
 
 if __name__ == "__main__":
     check_verdicts()  # Make sure this function is called to start the process
