@@ -1,5 +1,5 @@
 # plucky-verdicts-accountability
-A project to integrate accountability reporting into Single Eye Software's self-control software Plucky (formerly known as Pluckeye).
+A project to integrate accountability email reporting into Single Eye Software's self-control software Plucky (formerly known as Pluckeye).
 
 ## What is Plucky?
 *Please note that I am not employed by Single Eye Software -- I am simply one of their customers.*
