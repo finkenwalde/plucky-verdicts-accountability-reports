@@ -1,12 +1,12 @@
 # plucky-verdicts-accountability
-A project to integrate accountability into Single Eye Software's self-control software Plucky (formerly known as Pluckeye).
+A project to integrate accountability reporting into Single Eye Software's self-control software Plucky (formerly known as Pluckeye).
 
 ## What is Plucky?
 *Please note that I am not employed by Single Eye Software -- I am simply one of their customers.*
-Plucky (formerly known as Pluckeye) is a self-control and filtering software developed by Single Eye Software. Please see [getplucky.net] and [pluckeye.net] for more details. To help support the continued development of Plucky, please consider [remunerating](https://s.pluckeye.net/remunerate). 
+Plucky (formerly known as Pluckeye) is a self-control and filtering software developed by Single Eye Software. Please see [getplucky.net](getplucky.net) and [pluckeye.net](pluckeye.net) for more details. To help support the continued development of Plucky, please consider [remunerating](https://s.pluckeye.net/remunerate). 
 
 ## What is this project for?
-Plucky does not natively include accountability reporting to send to accountability partners. This project is attempting to develop a program that will work in conjunction with Plucky software to be able to send emails to accountability partners with reports of user-defined explicit sites that have been visited over a certain frequency (daily, weekly, etc.). 
+Plucky does not natively feature the ability to email accountability partners with internet activity. This project is attempting to develop a program that will work in conjunction with Plucky software to be able to send emails to accountability partners with reports of user-defined explicit sites that have been visited over a certain frequency (daily, weekly, etc.). 
 
 ## How does it work?
 This project relies on the [verdicts](https://docs.pluckeye.net/verdicts) feature of Plucky, which is capable of returning a live log of Plucky's background activity. As of the initial commit for this project, there exist two scripts and two text files that work together:
