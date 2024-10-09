@@ -15,7 +15,7 @@ This is a user-defined list of sites that are to be considered as explicit in na
 ### accountability-report.txt
 This is the log file that **plucky-verdicts-monitor.py** will create and fill when an explicit site from **explicit-sites.txt** is detected by Plucky Verdicts.
 ### plucky-verdicts-monitor.py
-This script runs `pluck verdicts -f` for a live feed of Plucky's background activity and parses the results to log any explicit sites (from **explicit-sites.txt**) visited to **accountability-report.txt**. A sample return of what 
+This script runs `pluck verdicts -f` for a live feed of Plucky's background activity and parses the results to log any explicit sites (from **explicit-sites.txt**) visited to **accountability-report.txt**. 
 ### email-accountability-partners.py
 This script can be configured to send the contents of **accountability-report.txt** to a list of accountability partners' emails. It can also be scheduled to run daily or weekly.
 
